@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+}
+* {
+  color: black;
+}
+.Curriculo {
+  background-image: url("../assents/fundo.jpg");
+  background-repeat: no-repeat;
+  width: 700px;
+  margin: auto;
+  border: 1px solid red;
+}
+.header {
+  display: flex;
+  margin: 30px;
+  justify-content: space-around;
+}
+#photo {
+  width: 10vh;
+  border: 1px solid black;
+  border-radius: 30px;
+}
+section {
+  margin: 0 30px;
+  border-bottom: 1px solid gray;
+}
+p {
+  font-weight: bold;
+}
+/* Cabeçalho do curriculo */
+.contact {
+  display: flex;
+  flex-direction: column;
+  margin: 2px;
+}
+/* grupo dos nomes com os icones */
+.infoData{
+    font-weight: 400;
+}
+/* Nome no curriculo */
+.contact span:first-child {
+  font-weight: bold;
+  font-size: 28px;
+}
+/* Dados pessoais de contato */
+.contact span:nth-child(+n+2){
+    display: flex;
+    justify-content: end;
+}
+

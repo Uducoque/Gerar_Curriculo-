@@ -19,11 +19,11 @@ $("#nomeCompleto").text(nomeCompleto);
 $("#nascimento").text(nascimento);
 $("#genero").text(genero);
 $("#estadoCivil").text(estadoCivil);
-$("#nacionalidade").text("Nacionalidade: " + nacionalidade);
-$("#cpf").text("CPF: " + cpf);
-$("#endereco").text("Endereço: " + endereco);
-$("#email").text("Email: " + email);
-$("#celular").text("Celular: " + celular);
+$("#nacionalidade").text(nacionalidade);
+$("#cpf").text(cpf);
+$("#endereco").text(endereco);
+$("#email").text(email);
+$("#celular").text(celular);
 $("#formacao").text(formacao); // Correção realizada nesta linha
 $("#objetivos").text(objetivos);
 $("#regiaoInteresse").text(regiaoInteresse);
