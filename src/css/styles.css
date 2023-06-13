@@ -1,0 +1,217 @@
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.header{
+	min-height:100vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(../assents/fundo.jpeg);
+	background-position: center;
+	background-size: cover;
+	position: relative;
+}
+nav{
+	display: flex;
+	padding: 4% 5%;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+
+nav img{			/*--logo-*/
+	width: 100px;
+	border-radius: 10%;
+}
+
+.nav-links{
+	flex: 1;
+	text-align: right;
+}
+
+.nav-links ul li{
+	list-style: none;
+	display: inline-block;
+	padding: 8px 12px;
+	position: relative;
+}
+.nav-links ul li a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+
+}
+
+.nav-links ul li::after{
+	content: '';
+	width: 0%;
+	height: 2px;
+	background: #f44336;
+	display: block;
+	margin: auto;
+	transition: 0.5s;
+}
+
+.nav-links ul li:hover::after{
+	width: 100%;
+}
+
+.caixa-texto{
+	width: 90%;
+	color: #fff;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);    /* ficará centralizado*/
+	text-align: center;
+}
+
+.caixa-texto h1{
+	font-size: 40px;		/*Tamanho da fonte do título*/
+}
+
+.caixa-texto h2{
+	font-size: 40px;
+	color: #000;
+}
+
+.caixa-texto p{
+	margin: 100px 0 40px;
+	font-size: 16px;
+	color: #fff;
+}
+
+.caixa-texto h3{
+	margin: 100px 0 40px;
+	font-size: 16px;
+	color: #888;
+	line-height: 200%;
+}
+
+.caixa-texto h4{
+	font-size: 35px;
+	padding-bottom: 100px;
+}
+
+
+/*------------------------CADASTRAR--------------------------*/
+
+.cadastrar{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+.cadastrar h1{
+	font-size: 30px;
+	font-weight: 600;
+	padding-bottom: 30px;
+}
+.cadastrar h2{
+	font-size: 15px;
+	color: 0;
+}
+
+.cadastrar p{
+	color: #888;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 22px;
+	padding: 10px;
+}
+
+
+/*Header utilizado em todas as paginas*/
+
+.sub-header{
+	height: 20vh;
+	width: 100%;
+	background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(imagens/fundo.png);
+}
+
+/*-------------------------FORMULARIO-----------------------------*/
+
+.formulario-dados{
+	border: 1px solid #ccc;
+	margin: 50px 0;
+	padding: 10px 20px;
+}
+
+.formulario-dados h3{
+	font-size: 14px;
+	text-align: left;
+}
+
+form input, form textarea{
+	width: 100%;
+	padding: 10px;
+	margin: 15px 0;
+	box-sizing: border-box;
+	border: none;
+	outline: none;
+	background: #f0f0f0;
+}
+#personalForm{
+	display: none;
+}
+#formationForm{
+	display: none;
+
+}
+#objectiveForm{
+	display: none;
+
+}
+#resumeForm{
+	display: none;
+
+}
+#stepForm.Person #personalForm{
+	display: block;
+}
+#stepForm.Formation #formationForm{
+	display: block;
+}
+#stepForm.Objective #objectiveForm{
+	display: block;
+}
+#stepForm.Resume #resumeForm{
+	display: block;
+}
+#stepForm.Person #buttonSubmit{
+	display: none;
+}
+#stepForm #buttonSubmit{
+    display: none;
+    text-decoration: none;
+    color: #000;
+    border: 1px solid #000;
+    border-radius: 25px;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: white;
+    position: relative;
+    cursor: pointer;
+}
+#stepForm #buttonSubmit:hover{
+    transition: all 0.5s;
+	background: red;
+	color: white;
+
+}
+#stepForm.Objective #buttonSubmit{
+	display: none;
+}
+#stepForm.Formation #buttonSubmit{
+	display: block;
+}
+#stepForm.Resume #buttonSubmit{
+	display: none;
+}
+
+
