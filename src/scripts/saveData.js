@@ -17,6 +17,9 @@ $(document).ready(function () {
     let regiaoInteresse = $("#regiaoInteresse").val();
     let pretensaoSalarial = $("#pretensaoSalarial").val();
     let resumo = $("#resumo").val();
+    let habilidades = $("#habilidades").val();
+    let idiomas = $("#idiomas").val();
+
 
     // Armazena os valores no LocalStorage
     localStorage.setItem("name", nomeCompleto);
@@ -33,6 +36,9 @@ $(document).ready(function () {
     localStorage.setItem("regiaoInteresse", regiaoInteresse);
     localStorage.setItem("pretensaoSalarial", pretensaoSalarial);
     localStorage.setItem("resumo", resumo);
+    localStorage.setItem("habilidades", habilidades);
+    localStorage.setItem("idiomas", idiomas);
+
 
     window.location.href = "Curriculo.html";
   });

@@ -1,54 +1,102 @@
 body {
+  background-color: #f7f7f7;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  border: 1px solid black;
 }
-* {
+*{
   color: black;
 }
+
 .Curriculo {
-  background-image: url("../assents/fundo.jpg");
-  background-repeat: no-repeat;
-  width: 700px;
-  margin: auto;
-  border: 1px solid red;
-}
-.header {
-  display: flex;
-  margin: 30px;
-  justify-content: space-around;
-}
-#photo {
-  width: 10vh;
-  border: 1px solid black;
-  border-radius: 30px;
-}
-section {
-  margin: 0 30px;
-  border-bottom: 1px solid gray;
-}
-p {
-  font-weight: bold;
-}
-/* Cabeçalho do curriculo */
-.contact {
-  display: flex;
-  flex-direction: column;
-  margin: 2px;
-}
-/* grupo dos nomes com os icones */
-.infoData{
-    font-weight: 400;
-}
-/* Nome no curriculo */
-.contact span:first-child {
-  font-weight: bold;
-  font-size: 28px;
-}
-/* Dados pessoais de contato */
-.contact span:nth-child(+n+2){
-    display: flex;
-    justify-content: end;
+  background-image: url('../assents/fundo.jpg');
+  margin: 30px auto;
+  padding: 30px;
+  max-width: 700px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.header img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+  transition: all 1s;
+}
+.header img:hover{
+  transform: rotate(270deg) scale(150%);
+}
+
+
+.header .contact {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.infoData {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.infoData i {
+  margin-right: 10px;
+  font-size: 16px;
+  color: #888;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 5px;
+}
+
+span {
+  font-weight: normal;
+}
+
+span#nomeCompleto {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+p#regiaoInteresse,
+p#pretensaoSalarial {
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+p#resumo {
+  margin-top: 20px;
+}
+
+p#idiomas,
+p#habilidades {
+  margin-top: 10px;
+}
+
+/* Ícones */
+.bi {
+  font-size: 16px;
+  vertical-align: middle;
+}
+
+/* Estilo para a seção de Objetivos */
+section#objetivos {
+  border-top: 1px solid #ccc;
+  padding-top: 20px;
+  margin-top: 30px;
+}

@@ -13,6 +13,8 @@ let objetivos = localStorage.getItem("objetivos");
 let regiaoInteresse = localStorage.getItem("regiaoInteresse");
 let pretensaoSalarial = localStorage.getItem("pretensaoSalarial");
 let resumo = localStorage.getItem("resumo");
+let habilidades = localStorage.getItem("habilidades");
+let idiomas = localStorage.getItem("idiomas");
 
 // Imprime os valores na tela
 $("#nomeCompleto").text(nomeCompleto);
@@ -29,3 +31,6 @@ $("#objetivos").text(objetivos);
 $("#regiaoInteresse").text(regiaoInteresse);
 $("#pretensaoSalarial").text(pretensaoSalarial);
 $("#resumo").text(resumo);
+$("#habilidades").text(habilidades);
+$("#idiomas").text(idiomas);
+

@@ -7,11 +7,12 @@
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
       crossorigin="anonymous" />
-      <!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
     <link rel="stylesheet" href="./src/css/Curriculo.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
     <title>Meu Currículo</title>
   </head>
@@ -19,9 +20,9 @@
     <div class="Curriculo">
       <div class="header">
         <img
-        class="rounded-circle shadow-4-strong"
-        alt="avatar2"
-        src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
+          class="rounded-circle shadow-4-strong"
+          alt="avatar2"
+          src="https://mdbcdn.b-cdn.net/img/new/avatars/1.webp" />
         <div class="contact">
           <div class="infoData">
             <span id="nomeCompleto"></span>
@@ -31,36 +32,40 @@
           </div>
           <div class="infoData">
             <span id="email"></span>
+            <i class="bi bi-envelope-fill"></i>
+          </div>
+          <div class="infoData">
+            <span id="celular"></span>
+            <i class="bi bi-telephone-fill"></i>
+          </div>
+        </div>
       </div>
-      <div class="infoData">
-        <span id="celular"></span>
-        <i class="bi bi-telephone"></i>
-      </div>
-
-      </div>
-    </div>
-    <section id = personalData>
-      <h2>Dados Pessoais</h2>
-      <p>Data de Nascimento: <span id="nascimento"></span></p>
-      <p>CPF: <span id="cpf"></span></p>
-      <p>Nacionalidade: <span id="nacionalidade"></span></p>
-      <p>Estado Civil: <span id="estadoCivil"></span></p>
-      <p>Genero: <span id="genero"></span></p>
-    </section>
-      <p>Formacao: </p>
-      <span id="formacao"></span>
-      <p>Objetivos: </p>
-      <span id="objetivos"></span>
-      <p>
-        Regiao de Interesse: <span id="regiaoInteresse"></span>
-      </p>
-      <p>
-        Pretensao Salarial:
-        <span id="pretensaoSalarial"></span>
-      </p>
-      <p>Resumo: <span id="resumo"></span></p>
+      <section id="personalData">
+        <h2>Dados Pessoais</h2>
+        <p>Data de Nascimento: <span id="nascimento"></span></p>
+        <p>CPF: <span id="cpf"></span></p>
+        <p>Nacionalidade: <span id="nacionalidade"></span></p>
+        <p>Estado Civil: <span id="estadoCivil"></span></p>
+        <p>Gênero: <span id="genero"></span></p>
+      </section>
+      <h2>Formação</h2>
+      <section id="formacao">
+        <p>Curso do Kaua em "Como ser o melhor"</p>
+      </section>
+      <h2>Objetivos</h2>
+      <section id="objetivos">
+        <p>Pretensão Salarial: <span id="pretensaoSalarial">1300</span></p>
+        <p>Resumo: <span id="resumo"></span></p>
+      </section>
+      <h2>Idiomas</h2>
+      <section id="idiomas">
+        <p><strong>Idiomas:</strong> <span id="idiomas"></span></p>
+      </section>
+      <h2>Habilidades</h2>
+      <section id="habilidades">
+        <p><strong>Habilidades:</strong> <span id="habilidades"></span></p>
+      </section>
     </div>
     <script src="./src/scripts/getData.js"></script>
-  </div>
   </body>
 </html>
