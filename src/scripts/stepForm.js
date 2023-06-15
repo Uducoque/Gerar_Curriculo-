@@ -4,9 +4,9 @@ $(document).ready(function () {
     let previousClass = "";
 
     if (currentClass === "") {
-      previousClass = "Person"; // Não há etapa anterior, mantém a mesma classe
+      previousClass = "Person"; 
     } else if (currentClass === "Person") {
-      previousClass = "Person"; // Não há etapa anterior, mantém a mesma classe
+      previousClass = "Person"; 
     } else if (currentClass === "Objective") {
       previousClass = "Person";
     } else if (currentClass === "Resume") {

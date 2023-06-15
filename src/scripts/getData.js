@@ -26,7 +26,7 @@ $("#cpf").text(cpf);
 $("#endereco").text(endereco);
 $("#email").text(email);
 $("#celular").text(celular);
-$("#formacao").text(formacao); 
+$("#formacao").text(formacao);
 $("#objetivos").text(objetivos);
 $("#regiaoInteresse").text(regiaoInteresse);
 $("#pretensaoSalarial").text(pretensaoSalarial);
